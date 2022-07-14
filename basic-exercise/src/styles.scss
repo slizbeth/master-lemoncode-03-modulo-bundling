@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Jost&display=swap');
+
+$base-color: #2b3a42;
+$base-font: 'Crimson Text', serif;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    align-items: center;
+    background-color: $base-color;
+    display: flex;
+    flex-direction: column;
+    font-family: $base-font;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    &__header {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        @media (max-width: 500px) {
+            flex-direction: column;
+            padding: 0 26px;
+        }
+    }
+
+    &__title {
+        font-size: 60px;
+        @media (max-width: 500px) {
+            font-size: 40px;
+        }
+    }
+    
+    &__icon {
+        .icon {
+            width: 100px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        @media (max-width: 500px) {
+            font-size: 20px;
+        }
+    }
+
+    &__body {
+        margin: auto;
+        width: 50%;
+    }
+    &__img {
+       max-width: 100%;
+       padding-top: 16px;
+    }
+}
